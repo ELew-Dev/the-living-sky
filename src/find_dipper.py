@@ -19,7 +19,7 @@ except Exception as e:
 
 # Checkpoint 3: Look for the stars
 big_dipper_names = ["Dubhe", "Merak", "Phecda", "Megrez", "Alioth", "Mizar", "Alkaid"]
-# We use .str.strip() just in case there are hidden spaces in the names
+# .str.strip() just in case there are hidden spaces in the names
 dipper_df = df[df['proper'].fillna('').str.strip().isin(big_dipper_names)]
 
 print(f"SUCCESS: Found {len(dipper_df)} Big Dipper stars.")
