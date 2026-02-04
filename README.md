@@ -29,7 +29,7 @@ To ensure simulation accuracy and visual clarity, the raw HYG dataset undergoes 
 * **Visualization:** `Matplotlib` for generating time-series projections and luminosity shifts.
 
 ## 📂 System Architecture
-* `/data`: Source astrometric catalogs (CSV).
+* `/data`: Source astrometric catalogs (CSV - Ignored by Git).
 * `/notebooks`: Algorithmic development and coordinate validation.
 * `/src`: Modularized Python functions for 3D-to-2D projection.
 * `/notes`: Research journal covering stellar evolution and mathematical proofs.
