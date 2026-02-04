@@ -25,7 +25,8 @@ dipper_df = df[df['proper'].fillna('').str.strip().isin(big_dipper_names)]
 print(f"SUCCESS: Found {len(dipper_df)} Big Dipper stars.")
 
 if not dipper_df.empty:
-    print("\n--- RESULTS ---")
-    print(dipper_df[['proper', 'ra', 'dec', 'pmra', 'pmdec']])
+    print("\n--- KINEMATIC DATA LOADED ---")
+    # Adding distance and radial velocity for the 50,000-year jump
+    print(dipper_df[['proper', 'ra', 'dec', 'pmra', 'pmdec', 'dist', 'rv']])
 
 print("--- DEBUG END ---")
