@@ -11,10 +11,11 @@ The simulation generates three distinct celestial snapshots to validate kinemati
 3. **Deep Future Projection (+50,000 Years):** Visualizing the divergence of modern constellations and the emergence of new stellar patterns.
 
 ## 🔭 Technical Framework
-The simulation models the **3D Kinematics** of the solar neighborhood. By extracting velocity vectors from the HYG Stellar Database, the system calculates 4D state changes (position and brightness) over time $t$:
+The simulation models the **3D Kinematics** of the solar neighborhood. By extracting velocity vectors from the HYG Stellar Database, the system propagates stellar positions through 3D space over time $t$, while tracking derived photometric changes such as apparent brightness:
+
 
 * **Transverse Displacement:** Derived from Proper Motion vectors `pmRA` ($\mu_{\alpha}$) and `pmDec` ($\mu_{\delta}$).
-* **Radial Flux Evolution:** Modeling changes in Apparent Magnitude as stars alter their distance from Earth via Radial Velocity ($v_r$).
+* **Radial Displacement & Photometric Adjustment:** Updating stellar distance via integrated radial velocity ($v_r$), with apparent magnitude recomputed using the inverse-square law.
 * **Geometric Distortion:** Quantifying the "shear" of familiar asterisms (e.g., the Big Dipper) as individual stellar components diverge.
 
 ## ⚖️ Data Integrity & Preprocessing
