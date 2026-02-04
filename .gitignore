@@ -1,4 +1,14 @@
+# Environments
 venv/
+
+# Data and Large Files (Externalized)
+data/
+*.zip
+*.gz
+
+# Python System Files
 __pycache__/
+*.py[cod]
+
+# OS Specific Files
 .DS_Store
-*.pyc
