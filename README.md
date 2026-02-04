@@ -14,7 +14,7 @@ By extracting velocity vectors from the HYG Stellar Database, the system propaga
 
 * **Transverse Displacement:** Derived from Proper Motion vectors `pmRA` ($\mu_{\alpha}$) and `pmDec` ($\mu_{\delta}$).
 * **Radial Displacement & Photometric Adjustment:** Updating stellar distance via integrated radial velocity ($v_r$), with apparent magnitude recomputed using the inverse-square law.
-* **Geometric Distortion:** Quantifying the "shear" of familiar asterisms—specifically focusing on **The Big Dipper (Ursa Major)**—as individual stellar components diverge.
+* **Geometric Distortion:** Quantifying the "shear" of familiar asterisms specifically focusing on **The Big Dipper (Ursa Major)**—as individual stellar components diverge.
 
 
 
